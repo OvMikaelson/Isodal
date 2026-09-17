@@ -24484,6 +24484,13 @@ fieldset[disabled] .swiper-slide-caption .btn-default {
 	z-index: 1;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .swiper-container {
+        height: 45.5vh;
+        min-height: 0;
+    }
+}
+
 .swiper-container-no-flexbox .swiper-slide {
 	float: left;
 }
