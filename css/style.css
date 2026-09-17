@@ -30885,3 +30885,91 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensures the image doesn't stretch */
 }
+
+
+/* =========================================
+   NOTRE MÉTHODE
+========================================= */
+
+.method-step {
+    position: relative;
+    height: 100%;
+    padding: 0 15px;
+}
+
+.method-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 76px;
+    height: 76px;
+    margin-bottom: 5px;
+}
+
+.method-icon > .mdi {
+    font-size: 42px;
+    line-height: 1;
+    color: #17212b;
+}
+
+.method-number {
+    position: absolute;
+    top: -4px;
+    left: -12px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #f5d000;
+    color: #17212b;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.method-step h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 12px;
+}
+
+.method-step p {
+    max-width: 240px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Arrows between steps on large screens */
+@media (min-width: 992px) {
+    .method-step:not(:last-child)::after {
+        content: "\f054";
+        position: absolute;
+        top: 30px;
+        right: -8px;
+        font-family: "Material Design Icons";
+        font-size: 24px;
+        color: #17212b;
+    }
+}
+
+/* Mobile and tablet adjustments */
+@media (max-width: 991px) {
+    .method-step {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 575px) {
+    .method-step {
+        margin-bottom: 35px;
+    }
+
+    .method-step p {
+        max-width: 280px;
+    }
+}
