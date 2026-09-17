@@ -30873,15 +30873,8 @@ html:not(.ie-11):not(.ios) .parallax-disabled {
 	background-attachment: fixed;
 }
 
-@media (max-width: 991px) {
-    .isotope-wrap > .row > .col-sm-12 > .row {
-        margin-left: -8px;
-        margin-right: -8px;
-    }
-
-    .isotope-wrap > .row > .col-sm-12 > .row > [class*="col-"] {
-        padding-left: 8px;
-        padding-right: 8px;
-        margin-bottom: 16px;
-    }
+.oliver img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image doesn't stretch */
 }
